@@ -29,10 +29,12 @@ defmodule AOC2021.Day2 do
     case movement do
       "down" ->
         %{map | :aim => aim_val + val}
+
       "up" ->
         %{map | :aim => aim_val - val}
+
       "forward" ->
-        %{map | :position => position + val, :depth => depth + (aim_val * val)}
+        %{map | :position => position + val, :depth => depth + aim_val * val}
     end
   end
 end

@@ -1,21 +1,10 @@
-# Day1
+# Advent of Code 2021
+Solutions for the Advent of Code 2021
 
-**TODO: Add description**
+The data files are not included here. Solutions can be verified by downloading the data files into the root directory and running the module functions from an IEX repl.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `day_1` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:day_1, "~> 0.1.0"}
-  ]
-end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/day_1>.
-
+> iex -S mix
+iex(1)> AOC2021.Day2.calculate
+<result>
+```
