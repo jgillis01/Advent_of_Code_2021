@@ -35,7 +35,7 @@ defmodule AOC2021.Day3.Part1 do
     process_values(list, index + 1, [val | acc], greater, index + 1 < length)
   end
 
-  def process_values(list,_,acc,_, false) do
+  def process_values(_, _, acc, _, false) do
     acc
     |> Enum.reverse()
     |> Enum.join()
