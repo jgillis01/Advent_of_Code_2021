@@ -10,12 +10,12 @@ defmodule AOC2021.Day4.Part2 do
 
       boards =
         data
-        |> Part1.collect_boards()
+        |> Board.collect()
 
       numbers
       |> String.trim()
       |> String.split(",")
-      |> Enum.reduce(boards, &Part1.mark_boards/2)
+      |> Enum.reduce(boards, &Board.mark/2)
       |> Enum.max(fn(x,y) ->
         Enum.count(x.guesses) > Enum.count(y.guesses)
       end)
